@@ -1,0 +1,83 @@
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #f8f9fa;
+}
+
+  /* Header styles */ 
+  .navbar-brand {
+    font-size: 24px;
+  }
+  .navbar-nav .nav-link {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  .navbar-nav .nav-item.active .nav-link {
+    color: #ffffff;
+  }
+.navbar {
+    background-color: #054574;
+}
+
+.container {
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .success {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }

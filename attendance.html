@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Attendance</title>
+  <link rel="icon" type="image/x-icon" href="../media/logoicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/attendance.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Attendance</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/staff.html">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/catalogue.html" target="_blank">Courses</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../html/attendance.html">Attendance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/events.html" target="_blank">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/homepage.html">Log Out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="mt-5">All Attendance Records</h1>
+			<hr>
+		</div>
+	</div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <form class="mt-5">
+                    <div class="form-group">
+                        <label for="branch-select">Select Branch:</label>
+                        <select class="form-control" id="branch-select">
+                            <option value="">Select a Branch</option>
+                            <option value="computer-science">Computer Science</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="design">Design</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="semester-select">Select Semester:</label>
+                        <select class="form-control" id="semester-select">
+                            <option value="">Select a Semester</option>
+                            <option value="IV">IV</option>
+                            <option value="VI">VI</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="attendance-section" class="bg-light py-5" style="display:none;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <div id="attendance-record" class="bg-white p-4"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript code -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+
+        const branchSelect = document.getElementById("branch-select");
+        const semesterSelect = document.getElementById("semester-select");
+        const attendanceSection = document.getElementById("attendance-section");
+        const attendanceRecord = document.getElementById("attendance-record");
+
+        function showAttendanceRecord() {
+            if (branchSelect.value === "computer-science") {
+                if (semesterSelect.value === "IV") {
+                    attendanceRecord.innerHTML = "<h3>Attendance Record for Computer Science Semester IV:</h3><ul><li>Week 1: Present</li><li>Week 2: Present</li><li>Week 3: Absent</li><li>Week 4: Present</li></ul>";
+                    attendanceSection.style.display = "block";
+                } else if (semesterSelect.value === "VI") {
+                    attendanceRecord.innerHTML = "<h3>Attendance Record for Computer Science Semester VI:</h3><ul><li>Week 1: Present</li><li>Week 2: Absent</li><li>Week 3: Present</li><li>Week 4: Present</li></ul>";
+                    attendanceSection.style.display = "block";
+                } else {
+                    attendanceSection.style.display = "none";
+                }
+            } else {
+                attendanceSection.style.display = "none";
+            }
+        }
+
+        branchSelect.addEventListener("change", showAttendanceRecord);
+        semesterSelect.addEventListener("change", showAttendanceRecord);
+
+    });
+</script>
+</body>
+
+</html>
+
+
+</body>

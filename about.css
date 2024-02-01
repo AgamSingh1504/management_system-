@@ -1,0 +1,87 @@
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #f8f9fa;
+}
+
+  /* Header styles */ 
+  .navbar-brand {
+    font-size: 24px;
+  }
+  .navbar-nav .nav-link {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  .navbar-nav .nav-item.active .nav-link {
+    color: #ffffff;
+  }
+.navbar {
+    background-color: #054574;
+}
+
+.about {
+    margin-bottom: 50px;
+  }
+  
+  .about h1 {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .about hr {
+    border-color: #d9d9d9;
+  }
+  
+  .about p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  .about .card {
+    margin-bottom: 30px;
+  }
+  
+  .about .card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .about .card-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .about .card-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .about .card-link {
+    font-size: 16px;
+    font-weight: 600;
+    color: #007bff;
+  }
+
+/* Footer styles */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    color: #6c757d;
+    margin-top: 80px;
+  }
+  footer a {
+    color: #000;
+  }
+  footer a:hover {
+    color: #157cc5;
+  }
+  footer p {
+    font-size: 16px;
+  }
+  

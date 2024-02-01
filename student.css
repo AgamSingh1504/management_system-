@@ -1,0 +1,45 @@
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #f8f9fa;
+}
+
+  /* Header styles */ 
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .navbar-nav .nav-link {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  .navbar-nav .nav-item.active .nav-link {
+    color: #ffffff;
+  }
+.navbar {
+    background-color: #054574;
+}
+
+#content .row {
+    justify-content: center;
+  }
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+  }
+
+
+.card-header {
+    text-align: center;
+    font-size: 20px;
+    background-color: #054574;
+    color: #fff;
+}
+
+.card-footer {
+    background-color: #f8f9fa;
+}
